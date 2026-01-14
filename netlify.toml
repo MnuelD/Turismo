@@ -1,24 +1,45 @@
 [build]
   publish = "."
-  command = "echo 'Build successful'"
+  command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "18"
 
-# Redirecionamentos básicos
+# 1. Site principal
 [[redirects]]
   from = "/"
   to = "/site/index.html"
 
-[[redirects]]
-  from = "/admin"
-  to = "/admin/index.html"
-
+# 2. Admin (SPA - todas as rotas vão para index.html)
 [[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
 
+# 3. Acesso direto a TODOS os arquivos estáticos
 [[redirects]]
-  from = "/*"
-  to = "/site/index.html"
-  status = 200
+  from = "/site/*"
+  to = "/site/:splat"
+  force = false
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  force = false
+
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  force = false
+
+# 4. Para URLs sem .html (URLs limpas) - OPICIONAL
+[[redirects]]
+  from = "/sobre"
+  to = "/site/sobre.html"
+
+[[redirects]]
+  from = "/blog"
+  to = "/site/blog.html"
+
+[[redirects]]
+  from = "/contato"
+  to = "/site/contact.html"
