@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Turismo Angola - Confirmação de reserva e pagamento">
+    <meta name="author" content="Turismo Angola">
+    <title>Turismo Angola - Confirmação de Reserva</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- COMMON CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/vendors.css" rel="stylesheet">
+    
+    <!-- CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+     <!-- Header================================================== -->
+    <header>
+        <div id="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6"><i class="icon-phone"></i><strong>+244 923 456 789</strong></div>
+                    <div class="col-sm-6 col-7">
+						<ul id="top_links">
+							<li><a href="#sign-in-dialog" id="access_link">Entrar</a></li>
+							
+							</li>
+							<li>
+								<div class="dropdown dropdown-mini">
+									<a href="#" data-bs-toggle="dropdown" id="lang_link">English</a>
+									<div class="dropdown-menu">
+										<ul id="lang_menu">
+											<li><a href="#0">Spanish</a>
+											</li>
+											<li><a href="#0">French</a>
+											</li>
+											<li><a href="#0">German</a>
+											</li>
+											<li><a href="#0">Italian</a>
+											</li>
+											<li><a href="#0">Japanese</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Dropdown access -->
+							</li>
+							<li>
+								<div class="dropdown dropdown-mini">
+									<a href="#" data-bs-toggle="dropdown" id="currency_link">Euro</a>
+									<div class="dropdown-menu">
+										<ul id="lang_menu">
+											<li><a href="#0">USD</a>
+											</li>
+											<li><a href="#0">GBP</a>
+											</li>
+											<li><a href="#0">EUR</a>
+											</li>
+											<li><a href="#0">CHF</a>
+											</li>
+											<li><a href="#0">BRL</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Dropdown access -->
+							</li>
+						</ul>
+					</div>
+                </div><!-- End row -->
+            </div><!-- End container-->
+        </div><!-- End top line-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                    	<h1><a href="index.html" title="City tours travel template">City Tours travel templatesaedas</a></h1>
+                    </div>
+                </div>
+              <nav class="col-9">
+    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+    <div class="main-menu">
+        <div id="header_menu">
+            <img src="img/logo_survey_angola.png" width="160" height="40" alt="Survey Angola - Turismo Angolano">
+        </div>
+        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+        <ul>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Início <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="index_destinos.html">Destinos em Destaque</a></li>
+                    <li><a href="index_ofertas.html">Ofertas Especiais</a></li>
+                    <li><a href="index_experiencias.html">Experiências Únicas</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Destinos <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="destinos_provincias.html">Por Províncias</a></li>
+                    <li><a href="destinos_populares.html">Mais Populares</a></li>
+                    <li class="third-level"><a href="javascript:void(0);">Regiões de Angola</a>
+                        <ul>
+                            <li><a href="destino_luanda.html">Luanda & Litoral Norte</a></li>
+                            <li><a href="destino_centro.html">Região Centro</a></li>
+                            <li><a href="destino_sul.html">Região Sul</a></li>
+                            <li><a href="destino_leste.html">Região Leste</a></li>
+                            <li><a href="destino_nordeste.html">Nordeste</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="destinos_culturais.html">Roteiros Culturais</a></li>
+                    <li><a href="destinos_natureza.html">Ecoturismo & Natureza</a></li>
+                    <li><a href="destinos_praias.html">Praias & Lazer</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Hospedagem <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="hoteis_lista.html">Hotéis em Angola</a></li>
+                    <li><a href="hoteis_mapa.html">Mapa de Hospedagem</a></li>
+                    <li><a href="lodges.html">Lodges & Eco-Resorts</a></li>
+                    <li><a href="guesthouses.html">Guest Houses</a></li>
+                    <li><a href="apartamentos.html">Apartamentos Turísticos</a></li>
+                    <li><a href="reservar_hotel.php">Reservar Agora</a></li>
+                    <li><a href="hoteis_promocoes.html">Promoções</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Experiências <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="tours_lista.html">Tours & Passeios</a></li>
+                    <li><a href="safaris.html">Safaris & Vida Selvagem</a></li>
+                    <li><a href="aventura.html">Aventura & Desporto</a></li>
+                    <li><a href="cultural.html">Cultural & Histórico</a></li>
+                    <li><a href="gastronomia.html">Gastronomia Angolana</a></li>
+                    <li><a href="reservar_tour.php">Reservar Experiência</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Transporte <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="transfer_aeroporto.html">Transfer Aeroporto</a></li>
+                    <li><a href="aluguer_carros.html">Aluguer de Carros</a></li>
+                    <li><a href="transporte_turistico.html">Transporte Turístico</a></li>
+                    <li><a href="voos_domesticos.html">Voos Domésticos</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Para Empresas <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="cadastro_empresa.php">Cadastrar Meu Negócio</a></li>
+                    <li><a href="parceiros.html">Tornar-se Parceiro</a></li>
+                    <li><a href="dashboard_empresa.html">Área do Parceiro</a></li>
+                    <li><a href="planos_parceria.html">Planos & Preços</a></li>
+                    <li><a href="ferramentas_marketing.html">Ferramentas de Marketing</a></li>
+                </ul>
+            </li>
+            <li class="megamenu submenu">
+                <a href="javascript:void(0);" class="show-submenu-mega">Recursos <i class="icon-down-open-mini"></i></a>
+                <div class="menu-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h3>Planeie Sua Viagem</h3>
+                            <ul>
+                                <li><a href="guia_viagem.html">📘 Guia do Viajante</a></li>
+                                <li><a href="vistos.html">🛂 Vistos & Documentação</a></li>
+                                <li><a href="clima.html">🌤️ Clima & Melhor Época</a></li>
+                                <li><a href="moeda.html">💱 Moeda & Câmbio</a></li>
+                                <li><a href="seguranca.html">🛡️ Segurança & Saúde</a></li>
+                                <li><a href="itinerarios.html">🗺️ Itinerários Sugeridos</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>Sobre Angola</h3>
+                            <ul>
+                                <li><a href="cultura.html">🎭 Cultura & Tradições</a></li>
+                                <li><a href="historia.html">🏛️ História & Património</a></li>
+                                <li><a href="gastronomia_info.html">🍲 Gastronomia Local</a></li>
+                                <li><a href="festivais.html">🎉 Festivais & Eventos</a></li>
+                                <li><a href="artesanato.html">🎨 Artesanato Angolano</a></li>
+                                <li><a href="fauna_flora.html">🐘 Fauna & Flora</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>Apoio ao Cliente</h3>
+                            <ul>
+                                <li><a href="faq.html">❓ FAQ - Perguntas Frequentes</a></li>
+                                <li><a href="contactos.html">📞 Contacte-nos</a></li>
+                                <li><a href="blog.html">📰 Blog & Notícias</a></li>
+                                <li><a href="avaliacoes.html">⭐ Avaliações</a></li>
+                                <li><a href="app_mobile.html">📱 App Mobile</a></li>
+                                <li><a href="newsletter.html">📧 Subscrever Newsletter</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- End row -->
+                </div><!-- End menu-wrapper -->
+            </li>
+           
+        </ul>
+    </div><!-- End main-menu -->
+    <ul id="top_tools">
+       
+        
+        
+        <li>
+            <div class="dropdown dropdown-cart">
+                <a href="#" data-bs-toggle="dropdown" class="cart_bt"><i class="icon_bag_alt"></i><strong>2</strong></a>
+                <ul class="dropdown-menu" id="cart_items">
+                    <li>
+                        <div class="image"><img src="img/tour_kissama.jpg" alt="Tour Parque Kissama"></div>
+                        <strong><a href="#">Safari Kissama</a> 1x 25.000 Kz</strong>
+                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                    </li>
+                    <li>
+                        <div class="image"><img src="img/hotel_mussulo.jpg" alt="Hotel Mussulo"></div>
+                        <strong><a href="#">Hotel Mussulo</a> 3 noites 85.000 Kz</strong>
+                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                    </li>
+                    <li>
+                        <div>Total: <span>110.000 Kz</span></div>
+                        <a href="carrinho.html" class="button_drop">Ver Carrinho</a>
+                        <a href="checkout.html" class="button_drop outline">Finalizar Compra</a>
+                    </li>
+                </ul>
+            </div><!-- End dropdown-cart-->
+        </li>
+    </ul>
+</nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+
+
+    <section id="hero_2" class="background-image" data-background="url(img/confirmation/angola_confirmation_bg.jpg)">
+        <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
+        <div class="intro_title">
+            <h1>Reserva Confirmada!</h1>
+            <div class="bs-wizard row">
+                <div class="col-4 bs-wizard-step complete">
+                    <div class="text-center bs-wizard-stepnum">Carrinho</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="cart.html" class="bs-wizard-dot"></a>
+                </div>
+
+                <div class="col-4 bs-wizard-step complete">
+                    <div class="text-center bs-wizard-stepnum">Pagamento</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="payment.html" class="bs-wizard-dot"></a>
+                </div>
+
+                <div class="col-4 bs-wizard-step active">
+                    <div class="text-center bs-wizard-stepnum">Concluído!</div>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <a href="confirmation.html" class="bs-wizard-dot"></a>
+                </div>
+            </div>
+            <!-- End bs-wizard -->
+        </div>
+        <!-- End intro-title -->
+        </div>
+        <!-- End opacity-mask-->
+    </section>
+    <!-- End Section hero_2 -->
+
+    <main>
+        <div id="position">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cart.html">Carrinho</a></li>
+                    <li><a href="payment.html">Pagamento</a></li>
+                    <li>Confirmação</li>
+                </ul>
+            </div>
+        </div>
+        <!-- End position -->
+
+        <div class="container margin_60">
+            <div class="row">
+                <div class="col-lg-8 add_bottom_15">
+
+                    <div class="form_title">
+                        <h3><strong><i class="icon-ok"></i></strong> Reserva Confirmada com Sucesso!</h3>
+                        <p>
+                            Obrigado por escolher o Turismo Angola. A sua aventura angolana está prestes a começar!
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div class="alert alert-success" role="alert">
+                            <i class="icon-check-circle"></i> <strong>Parabéns!</strong> A sua reserva foi confirmada e o pagamento processado com sucesso.
+                        </div>
+                        
+                        <div class="confirmation-details">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><i class="icon-calendar"></i> O que acontece agora?</h5>
+                                    <ul class="list_ok">
+                                        <li>Receberá um email de confirmação em breve</li>
+                                        <li>Os vouchers serão enviados para o seu email</li>
+                                        <li>Os estabelecimentos foram notificados</li>
+                                        <li>Prepare-se para uma experiência incrível!</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="icon-doc"></i> Documentos importantes</h5>
+                                    <ul class="list_ok">
+                                        <li>Guarde o número da reserva</li>
+                                        <li>Leve o voucher impresso ou no telemóvel</li>
+                                        <li>Documento de identificação obrigatório</li>
+                                        <li>Comprovativo de pagamento (se necessário)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End step -->
+
+                    <div class="form_title">
+                        <h3><strong><i class="icon-tag-1"></i></strong> Resumo da Reserva</h3>
+                        <p>
+                            Detalhes completos da sua reserva em Angola
+                        </p>
+                    </div>
+                    <div class="step">
+                        <table class="table table-striped confirm">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <h5><i class="icon-location"></i> Passeio às Quedas de Kalandula</h5>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="40%">
+                                        <strong>Número da Reserva</strong>
+                                    </td>
+                                    <td>
+                                        <strong class="text-primary">TA-2024-001258</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Data do Passeio</strong>
+                                    </td>
+                                    <td>
+                                        15 de Março de 2024
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Participantes</strong>
+                                    </td>
+                                    <td>
+                                        2 Adultos
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Local de Encontro</strong>
+                                    </td>
+                                    <td>
+                                        Hotel Tropical Luanda - 08:00 AM
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Guia Turístico</strong>
+                                    </td>
+                                    <td>
+                                        Incluído (Português/Inglês)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Valor</strong>
+                                    </td>
+                                    <td>
+                                        <strong>153.000 KZ</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <table class="table table-striped confirm">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <h5><i class="icon-hotel"></i> Hotel Tropical Luanda</h5>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="40%">
+                                        <strong>Número da Reserva</strong>
+                                    </td>
+                                    <td>
+                                        <strong class="text-primary">HTL-2024-04567</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Check-in / Check-out</strong>
+                                    </td>
+                                    <td>
+                                        14 Mar 2024 - 17 Mar 2024 (3 noites)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Quarto</strong>
+                                    </td>
+                                    <td>
+                                        Standard Duplo (2 Adultos)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Regime Alimentar</strong>
+                                    </td>
+                                    <td>
+                                        Pequeno-almoço incluído
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Localização</strong>
+                                    </td>
+                                    <td>
+                                        Marginal de Luanda
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Valor</strong>
+                                    </td>
+                                    <td>
+                                        <strong>228.000 KZ</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <table class="table table-striped confirm">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <h5><i class="icon-car"></i> Transfer Aeroporto</h5>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="40%">
+                                        <strong>Data</strong>
+                                    </td>
+                                    <td>
+                                        14 de Março de 2024
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Horário</strong>
+                                    </td>
+                                    <td>
+                                        14:30 PM (Aprox. 1h após desembarque)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Trajeto</strong>
+                                    </td>
+                                    <td>
+                                        Aeroporto 4 de Fevereiro → Hotel Tropical
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Veículo</strong>
+                                    </td>
+                                    <td>
+                                        Executivo com ar condicionado
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Valor</strong>
+                                    </td>
+                                    <td>
+                                        <strong>25.000 KZ</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="total-summary">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Subtotal</strong></td>
+                                        <td class="text-end">406.000 KZ</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Seguro de Viagem</strong></td>
+                                        <td class="text-end">30.000 KZ</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Descontos Aplicados</strong></td>
+                                        <td class="text-end text-success">-25.650 KZ</td>
+                                    </tr>
+                                    <tr class="total">
+                                        <td><strong>Total Pago</strong></td>
+                                        <td class="text-end"><strong>410.350 KZ</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Método de Pagamento</strong></td>
+                                        <td class="text-end">Cartão de Crédito (Mastercard)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Data do Pagamento</strong></td>
+                                        <td class="text-end">12 de Março de 2024 - 14:25</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Estado</strong></td>
+                                        <td class="text-end"><span class="badge bg-success">Pago e Confirmado</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--End step -->
+                    
+                    <div class="form_title">
+                        <h3><strong><i class="icon-user"></i></strong> Dados do Cliente</h3>
+                    </div>
+                    <div class="step">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Nome:</strong> João Silva Santos</p>
+                                <p><strong>Email:</strong> joao.silva@email.com</p>
+                                <p><strong>Telefone:</strong> +244 923 456 789</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Morada:</strong> Rua da Independência, 123</p>
+                                <p><strong>Cidade:</strong> Luanda</p>
+                                <p><strong>Província:</strong> Luanda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End col -->
+
+                <aside class="col-lg-4">
+                    <div class="box_style_1">
+                        <h3 class="inner">Parabéns!</h3>
+                        <p>
+                            <i class="icon-check-circle text-success"></i> A sua reserva foi confirmada com sucesso. Estamos ansiosos por lhe proporcionar uma experiência inesquecível em Angola.
+                        </p>
+                        <hr>
+                        <div class="text-center mb-3">
+                            <div class="qrcode">
+                                <img src="img/qrcode.png" alt="QR Code Reserva" class="img-fluid" style="max-width: 200px;">
+                                <p class="small mt-2">Mostre este código QR no check-in</p>
+                            </div>
+                        </div>
+                        <a class="btn_full_outline" href="invoice.html" target="_blank">
+                            <i class="icon-download"></i> Download da Factura
+                        </a>
+                        <a class="btn_full mt-2" href="my_bookings.html">
+                            <i class="icon-basket"></i> Ver Minhas Reservas
+                        </a>
+                    </div>
+                    
+                    <div class="box_style_4">
+                        <i class="icon_set_1_icon-89"></i>
+                        <h4>Tem <span>dúvidas?</span></h4>
+                        <p>Estamos aqui para ajudar em todas as etapas da sua viagem.</p>
+                        <a href="tel://+244222000000" class="phone">+244 222 000 000</a>
+                        <small>Segunda a Sexta 8.00am - 6.00pm</small>
+                        <p><a href="contact_us_1.html">Contacte-nos por email</a></p>
+                    </div>
+                    
+                    <div class="box_style_2">
+                        <h4>Próximos Passos</h4>
+                        <ol class="list_numbers">
+                            <li><strong>Confirmação por email</strong> - Receba os vouchers em 15 minutos</li>
+                            <li><strong>Preparação da viagem</strong> - Verifique os documentos necessários</li>
+                            <li><strong>Check-in no hotel</strong> - Apresente o voucher impresso ou digital</li>
+                            <li><strong>Divirta-se</strong> - Desfrute da sua experiência angolana!</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="box_style_1">
+                        <h4>Partilhe a sua alegria</h4>
+                        <p>Conte aos seus amigos que vai conhecer Angola!</p>
+                        <div class="social-share">
+                            <a href="#" class="social_facebook"><i class="icon-facebook"></i> Partilhar</a>
+                            <a href="#" class="social_twitter"><i class="icon-twitter"></i> Tweet</a>
+                            <a href="#" class="social_instagram"><i class="icon-instagram"></i> Instagram</a>
+                        </div>
+                    </div>
+                    
+                    <div class="box_style_3">
+                        <h4>Dicas para a sua viagem</h4>
+                        <ul class="list_ok">
+                            <li>Leve protetor solar e chapéu</li>
+                            <li>Use calçado confortável para caminhadas</li>
+                            <li>Troque dinheiro em casas de câmbio autorizadas</li>
+                            <li>Respeite a cultura e tradições locais</li>
+                            <li>Beba apenas água engarrafada</li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+            <!--End row -->
+        </div>
+        <!--End container -->
+    </main>
+    <!-- End main -->
+
+	<footer class="revealed">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Precisa de ajuda?</h3>
+                    <a href="tel://+244923456789" id="phone">+244 923 456 789</a>
+                    <a href="mailto:suporte@angolaturismo.com" id="email_footer">suporte@angolaturismo.com</a>
+                </div>
+                <div class="col-md-3">
+                    <h3>Sobre</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre nós</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Registar</a></li>
+                         <li><a href="#">Termos e condições</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Descobrir</h3>
+                    <ul>
+                        <li><a href="#">Blog da comunidade</a></li>
+                        <li><a href="tourist_guide.html">Guia turístico</a></li>
+                        <li><a href="wishlist.html">Lista de desejos</a></li>
+                         <li><a href="gallery_3_columns.html">Galeria</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Configurações</h3>
+                    <div class="styled-select">
+                        <select name="lang" id="lang">
+                            <option value="Portuguese" selected>Português</option>
+                            <option value="English">English</option>
+                            <option value="Spanish">Español</option>
+                            <option value="French">Français</option>
+                        </select>
+                    </div>
+                    <div class="styled-select">
+                        <select name="currency" id="currency">
+                            <option value="AOA" selected>AOA (Kz)</option>
+                            <option value="USD">USD ($)</option>
+                            <option value="EUR">EUR (€)</option>
+                            <option value="GBP">GBP (£)</option>
+                        </select>
+                    </div>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                        <p>© AngolaTurismo 2024 - Promovendo o turismo angolano</p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer><!-- End footer -->
+
+    <div id="toTop"></div><!-- Back to top button -->
+    
+    <!-- Search Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+        <form role="search" id="searchform" method="get">
+            <input value="" name="q" type="text" placeholder="Pesquisar no site..." />
+            <button type="submit"><i class="icon_set_1_icon-78"></i></button>
+        </form>
+    </div><!-- End Search Menu -->
+    
+    <!-- Sign In Popup -->
+    <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+        <div class="small-dialog-header">
+            <h3>Entrar na Plataforma</h3>
+        </div>
+        <form>
+            <div class="sign-in-wrapper">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                    <i class="icon_mail_alt"></i>
+                </div>
+                <div class="form-group">
+                    <label>Palavra-passe</label>
+                    <input type="password" class="form-control" name="password" id="password" value="">
+                    <i class="icon_lock_alt"></i>
+                </div>
+                <div class="clearfix add_bottom_15">
+                    <div class="checkboxes float-start">
+                        <label class="container_check">Lembrar-me
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="float-end"><a id="forgot" href="javascript:void(0);">Esqueci a palavra-passe</a></div>
+                </div>
+                <div class="text-center"><input type="submit" value="Entrar" class="btn_login"></div>
+                <div class="text-center">
+                    Não tem uma conta? <a href="register.html">Registar-se</a>
+                </div>
+                <div id="forgot_pw">
+                    <div class="form-group">
+                        <label>Digite o seu email</label>
+                        <input type="email" class="form-control" name="email_forgot" id="email_forgot">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <p>Receberá um email com um link para redefinir a sua palavra-passe.</p>
+                    <div class="text-center"><input type="submit" value="Redefinir Palavra-passe" class="btn_1"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- /Sign In Popup -->
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        // Clear cart after successful purchase
+        localStorage.removeItem('cart_items');
+        localStorage.removeItem('couponDiscount');
+        $('#cart_count').text('0');
+        
+        // Print booking confirmation
+        $('.btn_full_outline').click(function(){
+            window.print();
+            return false;
+        });
+        
+        // Share on social media
+        $('.social-share a').click(function(e){
+            e.preventDefault();
+            var social = $(this).attr('class').replace('social_', '');
+            var message = "Acabei de reservar uma viagem incrível em Angola através do Turismo Angola! 🎉 #TurismoAngola #VisiteAngola";
+            var url = window.location.href;
+            
+            switch(social) {
+                case 'facebook':
+                    window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url), 'facebook-share', 'width=580,height=296');
+                    break;
+                case 'twitter':
+                    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(message) + '&url=' + encodeURIComponent(url), 'twitter-share', 'width=550,height=235');
+                    break;
+                case 'instagram':
+                    alert('Partilhe a sua experiência no Instagram com a hashtag #TurismoAngola');
+                    break;
+            }
+        });
+        
+        // Language and currency change
+        $('#lang').change(function(){
+            console.log('Idioma alterado para: ' + $(this).val());
+        });
+
+        $('#currency').change(function(){
+            console.log('Moeda alterada para: ' + $(this).val());
+        });
+        
+        // Auto-scroll to top
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        
+        // Show success message
+        setTimeout(function(){
+            $('.alert-success').fadeIn();
+        }, 500);
+    });
+    </script>
+
+</body>
+
+</html>

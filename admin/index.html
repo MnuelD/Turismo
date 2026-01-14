@@ -1,0 +1,841 @@
+<!doctype html>
+<html
+  lang="en"
+  class="layout-menu-fixed layout-compact"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Admin - Plataforma Turismo Angola</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/iconify-icons.css" />
+
+    <!-- Core CSS -->
+    <!-- build:css assets/vendor/css/theme.css  -->
+
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+             
+              <span class="app-brand-text demo menu-text fw-bold ms-6">Survey Angola</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+              <i class="bx bx-chevron-left d-block d-xl-none align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-divider mt-0"></div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item active open">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-home-smile"></i>
+                <div class="text-truncate" data-i18n="Dashboard">Dashboard</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item active">
+                  <a href="index.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Visão Geral">Visão Geral</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="dashboard-analytics.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Análises">Análises</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="dashboard-financeiro.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Financeiro">Financeiro</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Gestão de Conteúdo -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-map"></i>
+                <div class="text-truncate" data-i18n="Destinos">Destinos & Atrações</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="destinos-lista.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Todos Destinos">Todos Destinos</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="destinos-cadastrar.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Adicionar Destino">Adicionar Destino</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="atracoes-lista.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Atrações Turísticas">Atrações Turísticas</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="roteiros-lista.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Roteiros">Roteiros</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Estabelecimentos -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-building"></i>
+                <div class="text-truncate" data-i18n="Estabelecimentos">Estabelecimentos</div>
+                <span class="badge rounded-pill bg-danger ms-auto" id="pending-establishments">3</span>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="estabelecimentos-lista.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Todos Estabelecimentos">Todos Estabelecimentos</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="estabelecimentos-pendentes.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Pendentes de Validação">Pendentes de Validação</div>
+                    <span class="badge rounded-pill bg-danger ms-auto">3</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="estabelecimentos-categorias.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Categorias">Categorias</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="estabelecimentos-relatorios.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Relatórios">Relatórios</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Reservas -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-calendar-check"></i>
+                <div class="text-truncate" data-i18n="Reservas">Reservas</div>
+                <span class="badge rounded-pill bg-warning ms-auto" id="pending-reservations">12</span>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="reservas-lista.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Todas Reservas">Todas Reservas</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="reservas-pendentes.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Pendentes">Pendentes</div>
+                    <span class="badge rounded-pill bg-warning ms-auto">12</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="reservas-confirmadas.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Confirmadas">Confirmadas</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="reservas-canceladas.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Canceladas">Canceladas</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="reservas-relatorios.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Relatórios">Relatórios</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Utilizadores -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div class="text-truncate" data-i18n="Utilizadores">Utilizadores</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="utilizadores-lista.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Todos Utilizadores">Todos Utilizadores</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="utilizadores-turistas.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Turistas">Turistas</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="utilizadores-guias.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Guias Turísticos">Guias Turísticos</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="utilizadores-admin.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Administradores">Administradores</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Avaliações -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-star"></i>
+                <div class="text-truncate" data-i18n="Avaliações">Avaliações & Comentários</div>
+                <span class="badge rounded-pill bg-info ms-auto" id="new-reviews">5</span>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="avaliacoes-lista.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Todas Avaliações">Todas Avaliações</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="avaliacoes-pendentes.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Pendentes Moderação">Pendentes Moderação</div>
+                    <span class="badge rounded-pill bg-info ms-auto">5</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="avaliacoes-denunciadas.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Denunciadas">Denunciadas</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Financeiro -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-money"></i>
+                <div class="text-truncate" data-i18n="Financeiro">Financeiro</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="financeiro-transacoes.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Transações">Transações</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="financeiro-comissoes.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Comissões">Comissões</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="financeiro-faturas.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Faturas">Faturas</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="financeiro-relatorios.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Relatórios">Relatórios Financeiros</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Configurações -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div class="text-truncate" data-i18n="Configurações">Configurações</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="configuracoes-geral.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Geral">Geral</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="configuracoes-pagamentos.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Pagamentos">Pagamentos</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="configuracoes-comissoes.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Taxas & Comissões">Taxas & Comissões</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="configuracoes-idiomas.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Idiomas & Moedas">Idiomas & Moedas</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="configuracoes-notificacoes.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Notificações">Notificações</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Parcerias & Marketing -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-bullseye"></i>
+                <div class="text-truncate" data-i18n="Marketing">Parcerias & Marketing</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="marketing-parcerias.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Parcerias">Parcerias</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="marketing-promocoes.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Promoções">Promoções</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="marketing-publicidade.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Publicidade">Publicidade</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="marketing-afiliados.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Programa Afiliados">Programa Afiliados</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Suporte -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-support"></i>
+                <div class="text-truncate" data-i18n="Suporte">Suporte</div>
+                <span class="badge rounded-pill bg-warning ms-auto" id="pending-tickets">8</span>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="suporte-tickets.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Tickets">Tickets</div>
+                    <span class="badge rounded-pill bg-warning ms-auto">8</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte-faq.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="FAQ">FAQ</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="suporte-guias.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Guias">Guias de Utilização</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Relatórios -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-pie-chart-alt"></i>
+                <div class="text-truncate" data-i18n="Relatórios">Relatórios</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="relatorios-gerais.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Gerais">Relatórios Gerais</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="relatorios-desempenho.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Desempenho">Desempenho</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="relatorios-turismo.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Estatísticas Turismo">Estatísticas Turismo</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="relatorios-exportar.html" class="menu-link">
+                    <div class="text-truncate" data-i18n="Exportar Dados">Exportar Dados</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar-detached navbar navbar-expand-xl align-items-center bg-navbar-theme"
+            id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-4 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
+                <i class="icon-base bx bx-menu icon-md"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center me-auto">
+                <div class="nav-item d-flex align-items-center">
+                  <span class="w-px-22 h-px-22"><i class="icon-base bx bx-search icon-md"></i></span>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none ps-1 ps-sm-2 d-md-block d-none"
+                    placeholder="Pesquisar..."
+                    aria-label="Search..." />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-md-auto">
+                <!-- Notificações -->
+                <li class="nav-item navbar-dropdown dropdown-notifications me-3">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow p-0"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown">
+                    <i class="icon-base bx bx-bell icon-md"></i>
+                    <span class="badge rounded-pill bg-danger badge-dot"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-grow-1">
+                            <h6 class="mb-0">Nova reserva recebida</h6>
+                            <small class="text-body-secondary">Há 5 minutos</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-grow-1">
+                            <h6 class="mb-0">Novo estabelecimento pendente</h6>
+                            <small class="text-body-secondary">Há 1 hora</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-grow-1">
+                            <h6 class="mb-0">Nova avaliação para moderar</h6>
+                            <small class="text-body-secondary">Há 2 horas</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider my-1"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-center" href="#">Ver todas notificações</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow p-0"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-0">Administrador</h6>
+                            <small class="text-body-secondary">Super Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider my-1"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="perfil.html">
+                        <i class="icon-base bx bx-user icon-md me-3"></i><span>Meu Perfil</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="configuracoes-geral.html">
+                        <i class="icon-base bx bx-cog icon-md me-3"></i><span>Configurações</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider my-1"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <i class="icon-base bx bx-power-off icon-md me-3"></i><span>Sair</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="row">
+                <!-- Cards de Resumo -->
+                <div class="col-lg-3 col-md-6 mb-6">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="card-title d-flex align-items-start justify-content-between mb-4">
+                        <div class="avatar flex-shrink-0">
+                          <img src="../assets/img/icons/unicons/wallet-info.png" alt="Reservas" class="rounded" />
+                        </div>
+                      </div>
+                      <p class="mb-1">Reservas Hoje</p>
+                      <h4 class="card-title mb-3">24</h4>
+                      <small class="text-success fw-medium"
+                        ><i class="icon-base bx bx-up-arrow-alt"></i> +12%</small
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-6">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="card-title d-flex align-items-start justify-content-between mb-4">
+                        <div class="avatar flex-shrink-0">
+                          <img src="../assets/img/icons/unicons/chart-success.png" alt="Receita" class="rounded" />
+                        </div>
+                      </div>
+                      <p class="mb-1">Receita Mensal</p>
+                      <h4 class="card-title mb-3">$12,628</h4>
+                      <small class="text-success fw-medium"
+                        ><i class="icon-base bx bx-up-arrow-alt"></i> +28%</small
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-6">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="card-title d-flex align-items-start justify-content-between mb-4">
+                        <div class="avatar flex-shrink-0">
+                          <img src="../assets/img/icons/unicons/user.png" alt="Utilizadores" class="rounded" />
+                        </div>
+                      </div>
+                      <p class="mb-1">Novos Utilizadores</p>
+                      <h4 class="card-title mb-3">156</h4>
+                      <small class="text-success fw-medium"
+                        ><i class="icon-base bx bx-up-arrow-alt"></i> +18%</small
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-6">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="card-title d-flex align-items-start justify-content-between mb-4">
+                        <div class="avatar flex-shrink-0">
+                          <img src="../assets/img/icons/unicons/building.png" alt="Estabelecimentos" class="rounded" />
+                        </div>
+                      </div>
+                      <p class="mb-1">Estabelecimentos</p>
+                      <h4 class="card-title mb-3">342</h4>
+                      <small class="text-success fw-medium"
+                        ><i class="icon-base bx bx-up-arrow-alt"></i> +8%</small
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Gráfico de Reservas -->
+                <div class="col-xxl-8 mb-6">
+                  <div class="card">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <div class="card-title mb-0">
+                        <h5 class="m-0 me-2">Reservas por Mês</h5>
+                      </div>
+                    </div>
+                    <div id="reservasChart" class="px-3 pt-3" style="height: 300px;"></div>
+                  </div>
+                </div>
+
+                <!-- Atividades Recentes -->
+                <div class="col-xxl-4 mb-6">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="card-title m-0 me-2">Atividades Recentes</h5>
+                    </div>
+                    <div class="card-body pt-4">
+                      <ul class="p-0 m-0">
+                        <li class="d-flex align-items-center mb-4">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-success">R</span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="fw-normal mb-0">Nova reserva confirmada</h6>
+                              <small class="text-body-secondary">Hotel Miradouro - 5 min atrás</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-4">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-primary">E</span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="fw-normal mb-0">Novo estabelecimento registado</h6>
+                              <small class="text-body-secondary">Restaurante Sabores - 1 hora atrás</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-4">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-warning">A</span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="fw-normal mb-0">Nova avaliação pendente</h6>
+                              <small class="text-body-secondary">Pousada das Palmeiras - 2 horas atrás</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-4">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-info">P</span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="fw-normal mb-0">Pagamento processado</h6>
+                              <small class="text-body-secondary">Safari Tour - 3 horas atrás</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-secondary">U</span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="fw-normal mb-0">Novo utilizador registado</h6>
+                              <small class="text-body-secondary">Turista internacional - 5 horas atrás</small>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Destinos Populares -->
+                <div class="col-12 mb-6">
+                  <div class="card">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="card-title m-0 me-2">Destinos Mais Populares</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4 mb-4">
+                          <div class="card border">
+                            <img class="card-img-top" src="../assets/img/destinos/luanda.jpg" alt="Luanda" style="height: 150px; object-fit: cover;">
+                            <div class="card-body">
+                              <h6 class="card-title">Luanda</h6>
+                              <p class="card-text">Ilha do Cabo, Fortaleza, Museus</p>
+                              <small class="text-body-secondary">128 reservas este mês</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                          <div class="card border">
+                            <img class="card-img-top" src="../assets/img/destinos/benguela.jpg" alt="Benguela" style="height: 150px; object-fit: cover;">
+                            <div class="card-body">
+                              <h6 class="card-title">Benguela</h6>
+                              <p class="card-text">Praias, Baía Azul, Cultura</p>
+                              <small class="text-body-secondary">94 reservas este mês</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                          <div class="card border">
+                            <img class="card-img-top" src="../assets/img/destinos/huambo.jpg" alt="Huambo" style="height: 150px; object-fit: cover;">
+                            <div class="card-body">
+                              <h6 class="card-title">Huambo</h6>
+                              <p class="card-text">Montanhas, Plantações, História</p>
+                              <small class="text-body-secondary">67 reservas este mês</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div
+                  class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
+                  <div class="mb-2 mb-md-0">
+                    &#169;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    , Plataforma de Turismo de Angola
+                  </div>
+                  <div class="d-none d-lg-inline-block">
+                    <span class="text-body-secondary">Super Admin Dashboard</span>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script>
+      // Inicializar gráfico de reservas
+      document.addEventListener('DOMContentLoaded', function() {
+        // Dados de exemplo para o gráfico
+        var options = {
+          series: [{
+            name: 'Reservas',
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 110, 95, 120]
+          }],
+          chart: {
+            height: 300,
+            type: 'line',
+            zoom: {
+              enabled: false
+            }
+          },
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+            curve: 'smooth'
+          },
+          title: {
+            text: '',
+            align: 'left'
+          },
+          grid: {
+            row: {
+              colors: ['#f3f3f3', 'transparent'],
+              opacity: 0.5
+            },
+          },
+          xaxis: {
+            categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+          }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#reservasChart"), options);
+        chart.render();
+      });
+    </script>
+  </body>
+</html>

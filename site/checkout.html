@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Turismo Angola - Finalização de reserva e pagamento seguro">
+    <meta name="author" content="Turismo Angola">
+    <title>Turismo Angola - Finalizar Pagamento</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- COMMON CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/vendors.css" rel="stylesheet">
+    
+    <!-- SPECIFIC CSS -->
+    <link href="css/shop.css" rel="stylesheet">
+    
+    <!-- CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+     <!-- Header================================================== -->
+    <header>
+        <div id="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6"><i class="icon-phone"></i><strong>+244 923 456 789</strong></div>
+                    <div class="col-sm-6 col-7">
+						<ul id="top_links">
+							<li><a href="#sign-in-dialog" id="access_link">Entrar</a></li>
+							
+							</li>
+							<li>
+								<div class="dropdown dropdown-mini">
+									<a href="#" data-bs-toggle="dropdown" id="lang_link">English</a>
+									<div class="dropdown-menu">
+										<ul id="lang_menu">
+											<li><a href="#0">Spanish</a>
+											</li>
+											<li><a href="#0">French</a>
+											</li>
+											<li><a href="#0">German</a>
+											</li>
+											<li><a href="#0">Italian</a>
+											</li>
+											<li><a href="#0">Japanese</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Dropdown access -->
+							</li>
+							<li>
+								<div class="dropdown dropdown-mini">
+									<a href="#" data-bs-toggle="dropdown" id="currency_link">Euro</a>
+									<div class="dropdown-menu">
+										<ul id="lang_menu">
+											<li><a href="#0">USD</a>
+											</li>
+											<li><a href="#0">GBP</a>
+											</li>
+											<li><a href="#0">EUR</a>
+											</li>
+											<li><a href="#0">CHF</a>
+											</li>
+											<li><a href="#0">BRL</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- End Dropdown access -->
+							</li>
+						</ul>
+					</div>
+                </div><!-- End row -->
+            </div><!-- End container-->
+        </div><!-- End top line-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                    	<h1><a href="index.html" title="City tours travel template">City Tours travel templatesaedas</a></h1>
+                    </div>
+                </div>
+              <nav class="col-9">
+    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+    <div class="main-menu">
+        <div id="header_menu">
+            <img src="img/logo_survey_angola.png" width="160" height="40" alt="Survey Angola - Turismo Angolano">
+        </div>
+        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+        <ul>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Início <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="index_destinos.html">Destinos em Destaque</a></li>
+                    <li><a href="index_ofertas.html">Ofertas Especiais</a></li>
+                    <li><a href="index_experiencias.html">Experiências Únicas</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Destinos <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="destinos_provincias.html">Por Províncias</a></li>
+                    <li><a href="destinos_populares.html">Mais Populares</a></li>
+                    <li class="third-level"><a href="javascript:void(0);">Regiões de Angola</a>
+                        <ul>
+                            <li><a href="destino_luanda.html">Luanda & Litoral Norte</a></li>
+                            <li><a href="destino_centro.html">Região Centro</a></li>
+                            <li><a href="destino_sul.html">Região Sul</a></li>
+                            <li><a href="destino_leste.html">Região Leste</a></li>
+                            <li><a href="destino_nordeste.html">Nordeste</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="destinos_culturais.html">Roteiros Culturais</a></li>
+                    <li><a href="destinos_natureza.html">Ecoturismo & Natureza</a></li>
+                    <li><a href="destinos_praias.html">Praias & Lazer</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Hospedagem <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="hoteis_lista.html">Hotéis em Angola</a></li>
+                    <li><a href="hoteis_mapa.html">Mapa de Hospedagem</a></li>
+                    <li><a href="lodges.html">Lodges & Eco-Resorts</a></li>
+                    <li><a href="guesthouses.html">Guest Houses</a></li>
+                    <li><a href="apartamentos.html">Apartamentos Turísticos</a></li>
+                    <li><a href="reservar_hotel.php">Reservar Agora</a></li>
+                    <li><a href="hoteis_promocoes.html">Promoções</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Experiências <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="tours_lista.html">Tours & Passeios</a></li>
+                    <li><a href="safaris.html">Safaris & Vida Selvagem</a></li>
+                    <li><a href="aventura.html">Aventura & Desporto</a></li>
+                    <li><a href="cultural.html">Cultural & Histórico</a></li>
+                    <li><a href="gastronomia.html">Gastronomia Angolana</a></li>
+                    <li><a href="reservar_tour.php">Reservar Experiência</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Transporte <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="transfer_aeroporto.html">Transfer Aeroporto</a></li>
+                    <li><a href="aluguer_carros.html">Aluguer de Carros</a></li>
+                    <li><a href="transporte_turistico.html">Transporte Turístico</a></li>
+                    <li><a href="voos_domesticos.html">Voos Domésticos</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="javascript:void(0);" class="show-submenu">Para Empresas <i class="icon-down-open-mini"></i></a>
+                <ul>
+                    <li><a href="cadastro_empresa.php">Cadastrar Meu Negócio</a></li>
+                    <li><a href="parceiros.html">Tornar-se Parceiro</a></li>
+                    <li><a href="dashboard_empresa.html">Área do Parceiro</a></li>
+                    <li><a href="planos_parceria.html">Planos & Preços</a></li>
+                    <li><a href="ferramentas_marketing.html">Ferramentas de Marketing</a></li>
+                </ul>
+            </li>
+            <li class="megamenu submenu">
+                <a href="javascript:void(0);" class="show-submenu-mega">Recursos <i class="icon-down-open-mini"></i></a>
+                <div class="menu-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h3>Planeie Sua Viagem</h3>
+                            <ul>
+                                <li><a href="guia_viagem.html">📘 Guia do Viajante</a></li>
+                                <li><a href="vistos.html">🛂 Vistos & Documentação</a></li>
+                                <li><a href="clima.html">🌤️ Clima & Melhor Época</a></li>
+                                <li><a href="moeda.html">💱 Moeda & Câmbio</a></li>
+                                <li><a href="seguranca.html">🛡️ Segurança & Saúde</a></li>
+                                <li><a href="itinerarios.html">🗺️ Itinerários Sugeridos</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>Sobre Angola</h3>
+                            <ul>
+                                <li><a href="cultura.html">🎭 Cultura & Tradições</a></li>
+                                <li><a href="historia.html">🏛️ História & Património</a></li>
+                                <li><a href="gastronomia_info.html">🍲 Gastronomia Local</a></li>
+                                <li><a href="festivais.html">🎉 Festivais & Eventos</a></li>
+                                <li><a href="artesanato.html">🎨 Artesanato Angolano</a></li>
+                                <li><a href="fauna_flora.html">🐘 Fauna & Flora</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>Apoio ao Cliente</h3>
+                            <ul>
+                                <li><a href="faq.html">❓ FAQ - Perguntas Frequentes</a></li>
+                                <li><a href="contactos.html">📞 Contacte-nos</a></li>
+                                <li><a href="blog.html">📰 Blog & Notícias</a></li>
+                                <li><a href="avaliacoes.html">⭐ Avaliações</a></li>
+                                <li><a href="app_mobile.html">📱 App Mobile</a></li>
+                                <li><a href="newsletter.html">📧 Subscrever Newsletter</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- End row -->
+                </div><!-- End menu-wrapper -->
+            </li>
+           
+        </ul>
+    </div><!-- End main-menu -->
+    <ul id="top_tools">
+       
+        
+        
+        <li>
+            <div class="dropdown dropdown-cart">
+                <a href="#" data-bs-toggle="dropdown" class="cart_bt"><i class="icon_bag_alt"></i><strong>2</strong></a>
+                <ul class="dropdown-menu" id="cart_items">
+                    <li>
+                        <div class="image"><img src="img/tour_kissama.jpg" alt="Tour Parque Kissama"></div>
+                        <strong><a href="#">Safari Kissama</a> 1x 25.000 Kz</strong>
+                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                    </li>
+                    <li>
+                        <div class="image"><img src="img/hotel_mussulo.jpg" alt="Hotel Mussulo"></div>
+                        <strong><a href="#">Hotel Mussulo</a> 3 noites 85.000 Kz</strong>
+                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                    </li>
+                    <li>
+                        <div>Total: <span>110.000 Kz</span></div>
+                        <a href="carrinho.html" class="button_drop">Ver Carrinho</a>
+                        <a href="checkout.html" class="button_drop outline">Finalizar Compra</a>
+                    </li>
+                </ul>
+            </div><!-- End dropdown-cart-->
+        </li>
+    </ul>
+</nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+
+    <section class="parallax-window" data-parallax="scroll" data-image-src="img/checkout/angola_checkout_bg.jpg" data-natural-width="1400" data-natural-height="470">
+        <div class="parallax-content-1 opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
+            <div class="animated fadeInDown">
+                <h1>Finalizar Pagamento</h1>
+                <p>Preencha os seus dados e complete a sua reserva de forma segura</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+
+    <main>
+        <div id="position">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cart.html">Carrinho</a></li>
+                    <li>Pagamento</li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Position -->
+
+        <div class="container margin_60">
+            <div class="checkout-page">
+
+                <div class="bs-wizard row mb-5">
+                    <div class="col-4 bs-wizard-step complete">
+                        <div class="text-center bs-wizard-stepnum">Carrinho</div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <a href="cart.html" class="bs-wizard-dot"></a>
+                    </div>
+
+                    <div class="col-4 bs-wizard-step active">
+                        <div class="text-center bs-wizard-stepnum">Pagamento</div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <a href="payment.html" class="bs-wizard-dot"></a>
+                    </div>
+
+                    <div class="col-4 bs-wizard-step disabled">
+                        <div class="text-center bs-wizard-stepnum">Confirmação</div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <a href="confirmation.html" class="bs-wizard-dot"></a>
+                    </div>
+                </div>
+
+                <ul class="default-links mb-4">
+                    <li>Já tem conta? <a href="#sign-in-dialog" id="login_link">Clique aqui para entrar</a></li>
+                    <li>Precisa de ajuda? <a href="tel://+244222000000">Ligue +244 222 000 000</a></li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-lg-7">
+
+                        <div class="billing-details">
+                            <div class="shop-form">
+                                <form method="post" id="payment_form">
+                                    <div class="default-title">
+                                        <h2>Dados de Facturação</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <label>Primeiro nome <sup>*</sup></label>
+                                            <input type="text" name="first_name" value="" placeholder="" class="form-control" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <label>Último nome <sup>*</sup></label>
+                                            <input type="text" name="last_name" value="" placeholder="" class="form-control" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <label>Email <sup>*</sup></label>
+                                            <input type="email" name="email" value="" placeholder="seu@email.com" class="form-control" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <label>Telefone <sup>*</sup></label>
+                                            <input type="text" name="phone" value="" placeholder="+244 9XX XXX XXX" class="form-control" required>
+                                        </div>
+                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                            <label>Morada <sup>*</sup></label>
+                                            <input type="text" name="address" value="" placeholder="Rua, Número" class="form-control" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <label>Cidade <sup>*</sup></label>
+                                            <input type="text" name="city" value="" placeholder="Luanda" class="form-control" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <label>Província <sup>*</sup></label>
+                                            <select name="province" class="form-control" required>
+                                                <option value="">Selecione uma província</option>
+                                                <option>Luanda</option>
+                                                <option>Benguela</option>
+                                                <option>Huíla</option>
+                                                <option>Cabinda</option>
+                                                <option>Huambo</option>
+                                                <option>Malanje</option>
+                                                <option>Lunda Norte</option>
+                                                <option>Lunda Sul</option>
+                                                <option>Outra</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <label>País <sup>*</sup></label>
+                                            <select name="country" class="form-control" required>
+                                                <option value="AO" selected>Angola</option>
+                                                <option value="PT">Portugal</option>
+                                                <option value="BR">Brasil</option>
+                                                <option value="MZ">Moçambique</option>
+                                                <option value="CV">Cabo Verde</option>
+                                                <option value="ST">São Tomé e Príncipe</option>
+                                                <option value="GW">Guiné-Bissau</option>
+                                                <option value="GQ">Guiné Equatorial</option>
+                                                <option value="OUTRO">Outro</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <label>Código Postal</label>
+                                            <input type="text" name="postal_code" value="" placeholder="Código Postal" class="form-control">
+                                        </div>
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <label class="container_check">
+                                                Criar uma conta?
+                                                <input type="checkbox" name="create_account" id="create_account">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <div id="account_password" style="display: none; margin-top: 10px;">
+                                                <label>Palavra-passe <sup>*</sup></label>
+                                                <input type="password" name="password" placeholder="Mínimo 8 caracteres" class="form-control">
+                                                <small>Será criada uma conta para gerir as suas reservas.</small>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <label>Notas da reserva (opcional)</label>
+                                            <textarea name="order_notes" placeholder="Notas especiais para a sua reserva, ex: necessidades alimentares, pedidos especiais, etc." class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--End Billing Details-->
+                    </div>
+                    <!--End Col-->
+
+                    <div class="col-lg-5">
+                        <div class="your-order">
+                            <div class="default-title">
+                                <h2>A Sua Reserva</h2>
+                            </div>
+                            <ul class="orders-table">
+                                <li class="table-header clearfix">
+                                    <div class="col">
+                                        <strong>Item</strong>
+                                    </div>
+                                    <div class="col">
+                                        <strong>Total</strong>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="col" style="text-transform:none;">
+                                        <img src="img/cart/kalandula_thumb.jpg" width="50" height="50" alt=""> Passeio Quedas de Kalandula (2 adultos)
+                                    </div>
+                                    <div class="col second">
+                                        153.000 KZ
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="col" style="text-transform:none;">
+                                        <img src="img/cart/hotel_thumb.jpg" width="50" height="50" alt=""> Hotel Tropical Luanda (3 noites)
+                                    </div>
+                                    <div class="col second">
+                                        228.000 KZ
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="col" style="text-transform:none;">
+                                        <img src="img/cart/transfer_thumb.jpg" width="50" height="50" alt=""> Transfer Aeroporto - Hotel
+                                    </div>
+                                    <div class="col second">
+                                        25.000 KZ
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="col" style="text-transform:none;">
+                                        <i class="icon_set_1_icon-71"></i> Seguro de viagem
+                                    </div>
+                                    <div class="col second">
+                                        30.000 KZ
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="col" style="text-transform:none;">
+                                        Subtotal
+                                    </div>
+                                    <div class="col second">
+                                        436.000 KZ
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="col" style="text-transform:none;">
+                                        <span class="text-success">Descontos</span>
+                                    </div>
+                                    <div class="col second text-success">
+                                        -25.650 KZ
+                                    </div>
+                                </li>
+                                <li class="clearfix total">
+                                    <div class="col">
+                                        <strong>Total da Reserva</strong>
+                                    </div>
+                                    <div class="col second">
+                                        <strong id="order_total">410.350 KZ</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="coupon-code">
+                                <div class="form-group">
+                                    <div class="field-group">
+                                        <input type="text" name="coupon_code" id="coupon_code" value="" placeholder="Código do cupom" class="form-control">
+                                    </div>
+                                    <div class="field-group btn-field">
+                                        <button type="button" id="apply_coupon" class="btn_cart_outine">Aplicar</button>
+                                    </div>
+                                </div>
+                                <div id="coupon_message" class="small"></div>
+                            </div>
+                        </div>
+                        <!--End Your Order-->
+
+                        <div class="place-order">
+                            <div class="default-title">
+                                <h2>Método de Pagamento</h2>
+                            </div>
+                            
+                            <div class="payment-options">
+                                <ul>
+                                    <li>
+                                        <div class="radio-option">
+                                            <input type="radio" name="payment_method" id="payment-1" value="credit_card" checked>
+                                            <label for="payment-1">
+                                                <strong>Cartão de Crédito/Débito</strong>
+                                                <span class="small-text">Pague com segurança usando o seu cartão Visa, Mastercard ou Multicaixa.</span>
+                                            </label>
+                                        </div>
+                                        <div id="credit_card_details" class="payment-details">
+                                            <div class="form-group">
+                                                <label>Número do Cartão <sup>*</sup></label>
+                                                <input type="text" name="card_number" placeholder="1234 5678 9012 3456" class="form-control">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Validade <sup>*</sup></label>
+                                                        <input type="text" name="card_expiry" placeholder="MM/AA" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>CVC <sup>*</sup></label>
+                                                        <input type="text" name="card_cvc" placeholder="123" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Nome no Cartão <sup>*</sup></label>
+                                                <input type="text" name="card_name" placeholder="Como aparece no cartão" class="form-control">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio-option">
+                                            <input type="radio" name="payment_method" id="payment-2" value="mpesa">
+                                            <label for="payment-2">
+                                                <strong>MPesa</strong>
+                                                <span class="small-text">Pagamento rápido via MPesa. Será enviado um pedido de pagamento para o seu telefone.</span>
+                                            </label>
+                                        </div>
+                                        <div id="mpesa_details" class="payment-details" style="display: none;">
+                                            <div class="form-group">
+                                                <label>Número de Telefone MPesa <sup>*</sup></label>
+                                                <input type="text" name="mpesa_phone" placeholder="+244 9XX XXX XXX" class="form-control">
+                                            </div>
+                                            <p class="small">Receberá uma notificação no seu telefone para confirmar o pagamento.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio-option">
+                                            <input type="radio" name="payment_method" id="payment-3" value="emis">
+                                            <label for="payment-3">
+                                                <strong>Transferência Bancária (EMIS)</strong>
+                                                <span class="small-text">Transferência via Sistema de Pagamentos Interbancários de Angola.</span>
+                                            </label>
+                                        </div>
+                                        <div id="emis_details" class="payment-details" style="display: none;">
+                                            <div class="alert alert-info">
+                                                <p><strong>Dados para transferência:</strong></p>
+                                                <p>Banco: Banco de Poupança e Crédito<br>
+                                                IBAN: AO06 0006 0000 1234 5678 9012 3<br>
+                                                Titular: Turismo Angola Lda.<br>
+                                                NIF: 541234567</p>
+                                                <p class="small">Envie o comprovativo para pagamentos@turismoangola.ao</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio-option">
+                                            <input type="radio" name="payment_method" id="payment-4" value="paypal">
+                                            <label for="payment-4">
+                                                <strong>PayPal</strong>
+                                                <img src="img/payments/paypal.png" alt="PayPal" width="60" style="margin-left: 10px;">
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="terms-checkbox">
+                                <label class="container_check">
+                                    Li e aceito os <a href="terms.html" target="_blank">Termos e Condições</a> e a <a href="privacy.html" target="_blank">Política de Privacidade</a>.
+                                    <input type="checkbox" name="terms" id="terms" required>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            
+                            <button type="button" id="place_order" class="btn_full">Finalizar Reserva <i class="icon-right"></i></button>
+                            
+                            <div class="security-info mt-3">
+                                <p class="small text-center">
+                                    <i class="icon-lock"></i> <strong>Pagamento 100% seguro</strong><br>
+                                    Todas as transações são criptografadas com SSL de 256-bit.
+                                </p>
+                                <div class="text-center">
+                                    <img src="img/payments/visa.png" alt="Visa" width="40" class="me-2">
+                                    <img src="img/payments/mastercard.png" alt="Mastercard" width="40" class="me-2">
+                                    <img src="img/payments/mpesa.png" alt="MPesa" width="40" class="me-2">
+                                    <img src="img/payments/emis.png" alt="EMIS" width="40">
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Place Order-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Container -->
+    </main>
+    <!-- End main -->
+
+	<footer class="revealed">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Precisa de ajuda?</h3>
+                    <a href="tel://+244923456789" id="phone">+244 923 456 789</a>
+                    <a href="mailto:suporte@angolaturismo.com" id="email_footer">suporte@angolaturismo.com</a>
+                </div>
+                <div class="col-md-3">
+                    <h3>Sobre</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre nós</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Registar</a></li>
+                         <li><a href="#">Termos e condições</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Descobrir</h3>
+                    <ul>
+                        <li><a href="#">Blog da comunidade</a></li>
+                        <li><a href="tourist_guide.html">Guia turístico</a></li>
+                        <li><a href="wishlist.html">Lista de desejos</a></li>
+                         <li><a href="gallery_3_columns.html">Galeria</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Configurações</h3>
+                    <div class="styled-select">
+                        <select name="lang" id="lang">
+                            <option value="Portuguese" selected>Português</option>
+                            <option value="English">English</option>
+                            <option value="Spanish">Español</option>
+                            <option value="French">Français</option>
+                        </select>
+                    </div>
+                    <div class="styled-select">
+                        <select name="currency" id="currency">
+                            <option value="AOA" selected>AOA (Kz)</option>
+                            <option value="USD">USD ($)</option>
+                            <option value="EUR">EUR (€)</option>
+                            <option value="GBP">GBP (£)</option>
+                        </select>
+                    </div>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                        <p>© AngolaTurismo 2024 - Promovendo o turismo angolano</p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer><!-- End footer -->
+
+    <div id="toTop"></div><!-- Back to top button -->
+    
+    <!-- Search Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+        <form role="search" id="searchform" method="get">
+            <input value="" name="q" type="text" placeholder="Pesquisar no site..." />
+            <button type="submit"><i class="icon_set_1_icon-78"></i></button>
+        </form>
+    </div><!-- End Search Menu -->
+    
+    <!-- Sign In Popup -->
+    <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+        <div class="small-dialog-header">
+            <h3>Entrar na Plataforma</h3>
+        </div>
+        <form>
+            <div class="sign-in-wrapper">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                    <i class="icon_mail_alt"></i>
+                </div>
+                <div class="form-group">
+                    <label>Palavra-passe</label>
+                    <input type="password" class="form-control" name="password" id="password" value="">
+                    <i class="icon_lock_alt"></i>
+                </div>
+                <div class="clearfix add_bottom_15">
+                    <div class="checkboxes float-start">
+                        <label class="container_check">Lembrar-me
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="float-end"><a id="forgot" href="javascript:void(0);">Esqueci a palavra-passe</a></div>
+                </div>
+                <div class="text-center"><input type="submit" value="Entrar" class="btn_login"></div>
+                <div class="text-center">
+                    Não tem uma conta? <a href="register.html">Registar-se</a>
+                </div>
+                <div id="forgot_pw">
+                    <div class="form-group">
+                        <label>Digite o seu email</label>
+                        <input type="email" class="form-control" name="email_forgot" id="email_forgot">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <p>Receberá um email com um link para redefinir a sua palavra-passe.</p>
+                    <div class="text-center"><input type="submit" value="Redefinir Palavra-passe" class="btn_1"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- /Sign In Popup -->
+
+    <!-- Common scripts -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        // Toggle create account password field
+        $('#create_account').change(function(){
+            if(this.checked) {
+                $('#account_password').slideDown();
+            } else {
+                $('#account_password').slideUp();
+            }
+        });
+        
+        // Show/hide payment method details
+        $('input[name="payment_method"]').change(function(){
+            // Hide all payment details
+            $('.payment-details').hide();
+            
+            // Show selected payment details
+            var selectedMethod = $(this).val();
+            if(selectedMethod === 'credit_card') {
+                $('#credit_card_details').show();
+            } else if(selectedMethod === 'mpesa') {
+                $('#mpesa_details').show();
+            } else if(selectedMethod === 'emis') {
+                $('#emis_details').show();
+            }
+        });
+        
+        // Apply coupon code
+        $('#apply_coupon').click(function(){
+            var couponCode = $('#coupon_code').val().toUpperCase();
+            var couponMessage = $('#coupon_message');
+            
+            if(couponCode === 'ANGOLA10') {
+                var discount = 41035; // 10% of 410,350
+                var newTotal = 410350 - discount;
+                $('#order_total').text(newTotal.toLocaleString('pt-AO') + ' KZ');
+                couponMessage.html('<span class="text-success"><i class="icon-check"></i> Cupom aplicado! Desconto de 10% aplicado.</span>');
+            } else if(couponCode === 'PRIMEIRAVIAGEM') {
+                var discount = 20000;
+                var newTotal = 410350 - discount;
+                $('#order_total').text(newTotal.toLocaleString('pt-AO') + ' KZ');
+                couponMessage.html('<span class="text-success"><i class="icon-check"></i> Cupom aplicado! Desconto de 20.000 KZ aplicado.</span>');
+            } else if(couponCode === '') {
+                couponMessage.html('<span class="text-warning">Por favor, insira um código de cupom.</span>');
+            } else {
+                couponMessage.html('<span class="text-danger"><i class="icon-cancel"></i> Código de cupom inválido ou expirado.</span>');
+            }
+        });
+        
+        // Place order validation
+        $('#place_order').click(function(e){
+            e.preventDefault();
+            
+            // Validate terms acceptance
+            if(!$('#terms').is(':checked')) {
+                alert('Por favor, aceite os Termos e Condições para prosseguir.');
+                return;
+            }
+            
+            // Validate required fields
+            var isValid = true;
+            $('#payment_form input[required]').each(function(){
+                if($(this).val() === '') {
+                    $(this).addClass('error');
+                    isValid = false;
+                } else {
+                    $(this).removeClass('error');
+                }
+            });
+            
+            if(!isValid) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            
+            // Get payment method
+            var paymentMethod = $('input[name="payment_method"]:checked').val();
+            
+            // Validate payment method details
+            if(paymentMethod === 'credit_card') {
+                var cardNumber = $('input[name="card_number"]').val();
+                var cardExpiry = $('input[name="card_expiry"]').val();
+                var cardCVC = $('input[name="card_cvc"]').val();
+                var cardName = $('input[name="card_name"]').val();
+                
+                if(!cardNumber || !cardExpiry || !cardCVC || !cardName) {
+                    alert('Por favor, preencha todos os dados do cartão.');
+                    return;
+                }
+            }
+            
+            if(paymentMethod === 'mpesa') {
+                var mpesaPhone = $('input[name="mpesa_phone"]').val();
+                if(!mpesaPhone) {
+                    alert('Por favor, insira o número de telefone MPesa.');
+                    return;
+                }
+            }
+            
+            // Show processing message
+            $(this).html('<i class="icon-spin6 animate-spin"></i> Processando...').prop('disabled', true);
+            
+            // Simulate payment processing
+            setTimeout(function(){
+                // Redirect to confirmation page
+                window.location.href = 'confirmation.html?order=' + Date.now();
+            }, 2000);
+        });
+        
+        // Format credit card number
+        $('input[name="card_number"]').on('input', function(){
+            var value = $(this).val().replace(/\D/g, '');
+            value = value.replace(/(\d{4})/g, '$1 ').trim();
+            $(this).val(value.substring(0, 19));
+        });
+        
+        // Format card expiry
+        $('input[name="card_expiry"]').on('input', function(){
+            var value = $(this).val().replace(/\D/g, '');
+            if(value.length > 2) {
+                value = value.substring(0,2) + '/' + value.substring(2,4);
+            }
+            $(this).val(value);
+        });
+        
+        // Format phone number
+        $('input[name="phone"], input[name="mpesa_phone"]').on('input', function(){
+            var value = $(this).val().replace(/\D/g, '');
+            if(value.startsWith('244')) {
+                value = '+244 ' + value.substring(3);
+            }
+            $(this).val(value);
+        });
+        
+        // Language and currency change
+        $('#lang').change(function(){
+            console.log('Idioma alterado para: ' + $(this).val());
+        });
+
+        $('#currency').change(function(){
+            console.log('Moeda alterada para: ' + $(this).val());
+            // Here you would typically make an API call to convert prices
+        });
+        
+        // Login link
+        $('#login_link').click(function(e){
+            e.preventDefault();
+            $.magnificPopup.open({
+                items: {
+                    src: '#sign-in-dialog',
+                    type: 'inline'
+                }
+            });
+        });
+    });
+    </script>
+
+</body>
+
+</html>
