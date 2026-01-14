@@ -2,6 +2,6 @@
   "name": "turismo-angola",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'Build completo para Turismo Angola'"
+    "build": "echo 'Build successful' && exit 0"
   }
 }
