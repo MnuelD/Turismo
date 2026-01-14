@@ -1,0 +1,80 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Verificar estrutura do projeto
+      run: |
+        echo "Estrutura do projeto:"
+        find . -type f -name "*.html" | head -20
+        echo ""
+        echo "Conteúdo das pastas:"
+        ls -la site/ admin/ assets/ 2>/dev/null || echo "Algumas pastas não existem"
+        
+    - name: Instalar dependências
+      run: npm ci
+      
+    - name: Validar HTML
+      run: |
+        # Instalar validador HTML
+        npm install -g html-validator-cli 2>/dev/null || true
+        
+        # Validar arquivos HTML principais
+        if [ -f "site/index.html" ]; then
+          echo "Validando site/index.html..."
+          npx html-validator --file=site/index.html --verbose || true
+        fi
+        
+        if [ -f "admin/index.html" ]; then
+          echo "Validando admin/index.html..."
+          npx html-validator --file=admin/index.html --verbose || true
+        fi
+        
+    - name: Deploy na Netlify
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: nwtgck/actions-netlify@v3.0
+      with:
+        publish-dir: '.'
+        production-branch: main
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        deploy-message: "Deploy automático: ${{ github.event.head_commit.message || 'Update via GitHub Actions' }}"
+        enable-pull-request-comment: false
+        enable-commit-comment: true
+        overwrites-pull-request-comment: true
+        alias: deploy-${{ github.sha }}
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      timeout-minutes: 5
+      
+    - name: Notificar sucesso
+      if: success()
+      run: |
+        echo "✅ Deploy realizado com sucesso!"
+        echo "URL do site: https://turismoits.netlify.app"
+        echo "URL do admin: https://turismoits.netlify.app/admin"
+        
+    - name: Notificar falha
+      if: failure()
+      run: |
+        echo "❌ Falha no deploy!"
+        echo "Verifique os logs acima para detalhes."

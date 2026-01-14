@@ -1,0 +1,24 @@
+[build]
+  publish = "."
+  command = "echo 'Build successful'"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Redirecionamentos básicos
+[[redirects]]
+  from = "/"
+  to = "/site/index.html"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+
+[[redirects]]
+  from = "/*"
+  to = "/site/index.html"
+  status = 200

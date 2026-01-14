@@ -1,0 +1,14 @@
+# Site principal
+/           /site/index.html   200
+/index.html /site/index.html   200
+
+# Admin
+/admin      /admin/index.html  200
+/admin/     /admin/index.html  200
+/admin/*    /admin/index.html  200
+
+# Assets - garantir acesso
+/assets/*   /assets/:splat      200
+
+# Fallback para SPA
+/*          /site/index.html    200
